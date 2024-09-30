@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirect Page</title>
     <script>
-        window.location.href = "https://messyadvance.com/bl3.Vv0/P/3/p/vwbwmxVbJVZHDf0H1YN_T/c_zXMvD/ML0nLrTtUQ1VNgz/MywqMgz-Up";
+        function isWebView() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            // Check for WebView in Android
+            if (/wv|Android.*Version\/[0-9]+/.test(userAgent)) {
+                return true;
+            }
+            // Check for WebView in iOS
+            if (/iPhone|iPod|iPad/.test(userAgent) && !window.MSStream && !navigator.standalone && !window.matchMedia('(display-mode: standalone)').matches) {
+                return true;
+            }
+            return false;
+        }
+
+        if (isWebView()) {
+            document.write("<p>Access from WebView is not allowed.</p>");
+        } else {
+            window.location.href = "https://heartyquit.com/bL3VVd0.Pl3cpivrbxmmVAJZZnDA0M1tN/T/gVyvN-zlku0kLqT/Ub1/OID_IU3gOSTkU-";
+        }
     </script>
 </head>
 <body>
-    <p>If it doesn't redirect automatically, click it <a href="https://messyadvance.com/bl3.Vv0/P/3/p/vwbwmxVbJVZHDf0H1YN_T/c_zXMvD/ML0nLrTtUQ1VNgz/MywqMgz-Up">here</a>.</p>
+    <p>If it doesn't redirect automatically, click it <a href="https://heartyquit.com/bL3VVd0.Pl3cpivrbxmmVAJZZnDA0M1tN/T/gVyvN-zlku0kLqT/Ub1/OID_IU3gOSTkU-">here</a>.</p>
 </body>
 </html>
